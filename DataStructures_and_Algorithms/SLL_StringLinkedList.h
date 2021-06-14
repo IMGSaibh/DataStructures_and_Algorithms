@@ -25,12 +25,13 @@ class StringLinkedList
 		bool IsEmpty() const;
 		
 		// get front element
-		const string& GetFirstElem() const;
+		const std::string& GetFirst() const;
 
-		void AddElemAtFirstposition(const string& e);
-		void RemoveFirstPosition();
+		void AddElemAtFirst(const std::string& e);
+		void RemoveFirst();
 
 	private:
+		// points to head of the list
 		StringNode* head; 
 };
 
