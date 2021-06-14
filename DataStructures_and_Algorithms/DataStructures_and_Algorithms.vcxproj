@@ -139,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Algorithmen.cpp" />
     <ClCompile Include="DataStructures_and_Algorithms.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Algorithmen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
