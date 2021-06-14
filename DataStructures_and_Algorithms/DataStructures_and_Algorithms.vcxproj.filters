@@ -18,12 +18,18 @@
     <ClCompile Include="DataStructures_and_Algorithms.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="Algorithmen.cpp">
+    <ClCompile Include="Algorithms.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="SLL_StringLinkedList.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Algorithmen.h">
+    <ClInclude Include="Algorithms.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="SLL_StringLinkedList.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

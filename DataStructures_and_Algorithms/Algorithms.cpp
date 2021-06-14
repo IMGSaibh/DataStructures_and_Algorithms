@@ -1,11 +1,11 @@
-#include "Algorithmen.h"
+#include "Algorithms.h"
 
-Algorithmen::Algorithmen()
+Algorithms::Algorithms()
 {
 }
 
 
-void Algorithmen::InsertionSort(char* letter, int n)
+void Algorithms::InsertionSort(char* letter, int n)
 {
 	for (size_t i = 0; i < n; i++)
 	{
@@ -25,6 +25,6 @@ void Algorithmen::InsertionSort(char* letter, int n)
 	}
 }
 
-Algorithmen::~Algorithmen()
+Algorithms::~Algorithms()
 {
 }

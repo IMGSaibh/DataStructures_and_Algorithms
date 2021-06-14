@@ -1,11 +1,11 @@
 #pragma once
 
 
-class Algorithmen
+class Algorithms
 {
 	public:
-		Algorithmen();
-		~Algorithmen();
+		Algorithms();
+		~Algorithms();
 		void InsertionSort(char* letter, int n);
 	private:
 
