@@ -4,12 +4,10 @@ StringLinkedList::StringLinkedList()
 : head(NULL)
 {
 }
-
 bool StringLinkedList::IsEmpty() const
 {
 	return head == NULL;
 }
-
 const std::string& StringLinkedList::GetFirst() const
 {
 	return head->elem;
@@ -39,7 +37,6 @@ void StringLinkedList::RemoveFirst()
 	// delete the old head
 	delete old; 
 }
-
 StringLinkedList::~StringLinkedList()
 {
 	while (!IsEmpty())
@@ -47,3 +44,4 @@ StringLinkedList::~StringLinkedList()
 		RemoveFirst();
 	}
 }
+
