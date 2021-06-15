@@ -24,12 +24,18 @@
     <ClCompile Include="SLL_StringLinkedList.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="DLL_DoublyLinkedList.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="SLL_StringLinkedList.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="DLL_DoublyLinkedList.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

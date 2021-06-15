@@ -140,11 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Algorithms.cpp" />
+    <ClCompile Include="DLL_DoublyLinkedList.cpp" />
     <ClCompile Include="SLL_StringLinkedList.cpp" />
     <ClCompile Include="DataStructures_and_Algorithms.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms.h" />
+    <ClInclude Include="DLL_DoublyLinkedList.h" />
     <ClInclude Include="SLL_StringLinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
