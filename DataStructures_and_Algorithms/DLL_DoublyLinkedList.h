@@ -37,8 +37,8 @@ class DLinkedList
 		DLinkedList();
 		~DLinkedList();
 		bool IsEmpty() const;
-		const Elem& GetFirst();
-		const Elem& GetLast();
+		const Elem& GetFirst()const;
+		const Elem& GetLast()const;
 		void AddElemAtFirst(const Elem& e);
 		void AddElemAtLast(const Elem& e);
 		void RemoveFirst();

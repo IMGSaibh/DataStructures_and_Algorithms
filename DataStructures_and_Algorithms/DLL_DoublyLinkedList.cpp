@@ -26,12 +26,12 @@ bool DLinkedList::IsEmpty() const
 	return header->next == trailer;
 }
 
-const Elem& DLinkedList::GetFirst()
+const Elem& DLinkedList::GetFirst() const
 {
 	return header->next->elem;
 }
 
-const Elem& DLinkedList::GetLast()
+const Elem& DLinkedList::GetLast()const
 {
 	return trailer->prev->elem;
 }
