@@ -1,5 +1,6 @@
 #include "Algorithms.h"
 #include "SLL_StringLinkedList.h"
+#include "DLL_DoublyLinkedList.h"
 
 using namespace std;
 
@@ -15,6 +16,7 @@ int main(void)
 
 	std::cout << endl;
 
+	//Singly Linked List
 	SLinkedList<string> sllist;
 	sllist.AddElemAtFirstT("First");
 	sllist.AddElemAtFirstT("Second");
@@ -24,6 +26,16 @@ int main(void)
 
 	sllist.RemoveFirstT();
 	first = sllist.GetFirstT();
+	cout << first << endl;
+	cout << "Singly Linked List end" << endl;
+
+
+	//Doubly Linked List
+	DLinkedList dllList;
+	dllList.AddElemAtFirst("D_First");
+	dllList.AddElemAtFirst("D_Second");
+	dllList.AddElemAtFirst("D_Third");
+	first = dllList.GetFirst();
 	cout << first << endl;
 
 	return 0;

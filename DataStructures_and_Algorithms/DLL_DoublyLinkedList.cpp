@@ -28,7 +28,7 @@ bool DLinkedList::IsEmpty() const
 
 const Elem& DLinkedList::GetFirst()
 {
-	return trailer->next->elem;
+	return header->next->elem;
 }
 
 const Elem& DLinkedList::GetLast()
