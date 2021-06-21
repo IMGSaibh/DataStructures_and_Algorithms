@@ -1,6 +1,7 @@
 #include "Algorithms.h"
 #include "SLL_StringLinkedList.h"
 #include "DLL_DoublyLinkedList.h"
+#include "CLL_CircularlyLinkedList.h"
 
 using namespace std;
 
@@ -16,7 +17,9 @@ int main(void)
 
 	std::cout << endl;
 
-	//Singly Linked List
+	/*
+		Singly Linked List
+	*/
 	SLinkedList<string> sllist;
 	sllist.AddElemAtFirstT("First");
 	sllist.AddElemAtFirstT("Second");
@@ -30,13 +33,35 @@ int main(void)
 	cout << "Singly Linked List end" << endl;
 
 
-	//Doubly Linked List
+	/*
+		Doubly Linked List
+	*/
 	DLinkedList dllList;
 	dllList.AddElemAtFirst("D_First");
 	dllList.AddElemAtFirst("D_Second");
 	dllList.AddElemAtFirst("D_Third");
 	first = dllList.GetFirst();
 	cout << first << endl;
+	cout << "Doubly Linked List end" << endl;
+
+	/*
+		Circularly Linked List
+	*/
+
+	cout << "Circularly Linked List start" << endl;
+	CLinkedList playList;
+	playList.Add("Would - Alice in Chains");
+	playList.Add("How soon is now - The Smiths");
+	playList.Add("Dont Stop me Now - Queens");
+
+	playList.Advance();
+	playList.Advance();
+	playList.Add("Beat It - Micheal Jackson");
+
+	// first elem in cllist
+	string cll_Front = playList.Back();
+	cout << cll_Front << endl;
+
 
 	return 0;
 }
