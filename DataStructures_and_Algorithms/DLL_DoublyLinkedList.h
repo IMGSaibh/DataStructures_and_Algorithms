@@ -41,6 +41,7 @@ class DLinkedList
 		const Elem& GetLast()const;
 		void AddElemAtFirst(const Elem& e);
 		void AddElemAtLast(const Elem& e);
+		void ListReverse(DLinkedList& l);
 		void RemoveFirst();
 		void RemoveLast();
 	private:

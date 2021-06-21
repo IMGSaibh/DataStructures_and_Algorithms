@@ -43,7 +43,29 @@ void DLinkedList::AddElemAtFirst(const Elem& e)
 
 void DLinkedList::AddElemAtLast(const Elem& e)
 {
-	Add(trailer->prev, e);
+	Add(trailer, e);
+}
+
+void DLinkedList::ListReverse(DLinkedList& l)
+{
+	DLinkedList tmpList;				//temp list
+	while (!l.IsEmpty())
+	{
+		//reverse l into tmpList
+		std::string s = l.GetFirst();
+		l.RemoveFirst();
+
+		tmpList.AddElemAtFirst(s);
+	}
+
+	//copy tmpList back to l
+	while (!tmpList.IsEmpty())
+	{
+		std::string s = tmpList.GetFirst();
+		tmpList.RemoveFirst();
+		l.AddElemAtLast(s);
+	}
+	//reverse done
 }
 
 void DLinkedList::RemoveFirst()

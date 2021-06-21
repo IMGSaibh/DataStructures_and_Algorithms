@@ -7,6 +7,9 @@ using namespace std;
 
 int main(void)
 {
+	/*
+		Insertion Sort
+	*/
 	char letters[5] { 'B', 'V', 'C', 'A', 'A', };
 	Algorithms algo;
 	algo.InsertionSort(letters, 5);
@@ -25,12 +28,14 @@ int main(void)
 	sllist.AddElemAtFirstT("Second");
 
 	string first = sllist.GetFirstT();
+	
 	cout << first << endl;
 
 	sllist.RemoveFirstT();
 	first = sllist.GetFirstT();
 	cout << first << endl;
 	cout << "Singly Linked List end" << endl;
+	std::cout << endl;
 
 
 	/*
@@ -40,9 +45,25 @@ int main(void)
 	dllList.AddElemAtFirst("D_First");
 	dllList.AddElemAtFirst("D_Second");
 	dllList.AddElemAtFirst("D_Third");
-	first = dllList.GetFirst();
-	cout << first << endl;
+	dllList.AddElemAtLast("D_Fourth");
+	string dll_first = dllList.GetFirst();
+	string dll_last = dllList.GetLast();
+	cout << "first elem " << dll_first << endl;
+	cout << "last elem " << dll_last << endl;
+	std::cout << endl;
+
+	//reverse a list
+	dllList.ListReverse(dllList);
+
+	string firstReverse = dllList.GetFirst();
+	string lastReverse = dllList.GetLast();
+	cout << "first elem reverse " << firstReverse << endl;
+	cout << "last elem reverse " << lastReverse << endl;
 	cout << "Doubly Linked List end" << endl;
+	std::cout << endl;
+
+
+
 
 	/*
 		Circularly Linked List
