@@ -8,6 +8,16 @@ using namespace std;
 int main(void)
 {
 	/*
+		vector
+	*/
+
+	vector<int> vectorElements = { 1,2,3 };
+	Algorithms algoVec;
+	std::cout << "sum vectorElements " << algoVec.VectorSum(vectorElements) << std::endl;
+
+
+
+	/*
 		Insertion Sort
 	*/
 	char letters[5] { 'B', 'V', 'C', 'A', 'A', };

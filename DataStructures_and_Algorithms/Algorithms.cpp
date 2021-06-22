@@ -25,6 +25,18 @@ void Algorithms::InsertionSort(char* letter, int n)
 	}
 }
 
+//fast read only vector iterator
+int Algorithms::VectorSum(const std::vector<int>& vec)
+{
+	std::vector<int>::const_iterator constIt;
+	int sum = 0;
+	for (constIt = vec.begin(); constIt != vec.end(); constIt++)
+	{
+		sum += *constIt;
+	}
+	return sum;
+}
+
 Algorithms::~Algorithms()
 {
 }
