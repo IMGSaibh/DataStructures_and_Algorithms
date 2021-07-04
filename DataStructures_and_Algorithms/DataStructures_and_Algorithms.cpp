@@ -2,6 +2,7 @@
 #include "SLL_StringLinkedList.h"
 #include "DLL_DoublyLinkedList.h"
 #include "CLL_CircularlyLinkedList.h"
+#include "LBT_LinkedBinaryTree.h"
 
 using namespace std;
 
@@ -93,6 +94,16 @@ int main(void)
 	string cll_Front = playList.Back();
 	cout << cll_Front << endl;
 
+
+	/*
+		Linked BinaryTree
+	*/
+
+	LinkedBinaryTree binaryTree;
+	binaryTree.AddRoot();
+	cout << "is root external " << binaryTree.Root().IsExternal();
+	//binaryTree.ExpandExternal();
+	
 
 	return 0;
 }

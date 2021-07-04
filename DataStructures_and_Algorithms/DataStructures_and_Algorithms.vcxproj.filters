@@ -30,6 +30,9 @@
     <ClCompile Include="CLL_CircularlyLinkedList.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="LBT_LinkedBinaryTree.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithms.h">
@@ -42,6 +45,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="CLL_CircularlyLinkedList.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="LBT_LinkedBinaryTree.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

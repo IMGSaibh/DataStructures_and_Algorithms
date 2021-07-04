@@ -3,8 +3,6 @@
 Algorithms::Algorithms()
 {
 }
-
-
 void Algorithms::InsertionSort(char* letter, int n)
 {
 	for (size_t i = 0; i < n; i++)
@@ -24,7 +22,6 @@ void Algorithms::InsertionSort(char* letter, int n)
 		letter[j + 1] = current;
 	}
 }
-
 //fast read only vector iterator
 int Algorithms::VectorSum(const std::vector<int>& vec)
 {
